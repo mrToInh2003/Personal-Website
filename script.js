@@ -79,7 +79,11 @@ function scrollToTop() {
         top: 0,
     });
 }
+const button = document.getElementById('myButton');
 
+button.addEventListener('click', function() {
+  window.location.href = './page1.html'; // Thay 'trang-sau.html' bằng URL của trang mới
+});
 window.addEventListener('scroll', function () {
     var scrollTopButton = document.querySelector('.scroll-top');
     if (this.window.pageYOffset > 200) {
