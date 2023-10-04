@@ -18,6 +18,16 @@ link1.addEventListener("click", () => {
 link2.addEventListener("click", () => {
   scrollToElement(".column");
 });
+const underlineBtns = document.querySelectorAll('.bn30');
+const underline = document.querySelector('.bn31');
+
+underlineBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    underline.style.left = `${btn.offsetLeft}px`;
+    underline.style.width = `${btn.offsetWidth}px`;
+    underline.classList.add('active');
+  });
+});
 window.onload = function () {
   const headerElement = document.querySelector(".header");
   headerElement.addEventListener("animationiteration", function () {
