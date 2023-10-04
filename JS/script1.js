@@ -18,3 +18,19 @@ link1.addEventListener('click', () => {
 link2.addEventListener('click', () => {
     scrollToElement('.column');
 });
+
+function showCard(index) {
+    var cards = document.querySelectorAll('.slideshow .card');
+    var buttons = document.querySelectorAll('.navigation button');
+
+    cards.forEach(function(card) {
+        card.classList.remove('active');
+    });
+
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+
+    cards[index - 1].classList.add('active');
+    buttons[index - 1].classList.add('active');
+}

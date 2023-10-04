@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../CSS/style1.css">
     <title>Personal Website</title>
 </head>
@@ -19,9 +20,9 @@
         </div>
 
         <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">Exercises</a></li>
-            <li id="link2" class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#"><button class="bn30">Home</button></a></li>
+            <li id="link1" class="link"> <a href="#"><button class="bn30">Exercises</button></a></li>
+            <li id="link2" class="link"><<a href="#"><button class="bn30">About</button></a></li>
         </ul>
 
     </nav>
@@ -41,95 +42,75 @@
         </div>
     </header>
 
-    <!-- <section class="container">
-        <h2 class="header">INDIVIDUAL EXERCISES</h2>
-        <div class="features">
-            <div class="card">
-                <span><i class="ri-money-dollar-box-line"></i></span>
-                <h4>EXERCISES 1</h4>
-                <p>
-                    FILL IN LOGIN INFORMATION
-                </p>
-                <a href="https://web3-7scg.onrender.com/Web1/emailList">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-bug-line"></i></span>
-                <h4>EXERCISES 2</h4>
-                <p>
-                    You have any problem in your codes? Tell me, i will help you fix it.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-history-line"></i></span>
-                <h4>EXERCISES 3</h4>
-                <p>
-                    We have video each 4 days, So check channel every 4 days to watch it!
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-shake-hands-line"></i></span>
-                <h4>EXERCISES 4</h4>
-                <p>
-                    You want we worrk together? Write email to us, we will read it.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-        </div>
-    </section> -->
-    <div class="container">
-        
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="../images/pexels-photo-1629781.webp">
-                    <h3>EXERCISES 1</h3>
+    <h2 class="header">INDIVIDUAL EXERCISES</h2>
+    <div class="container container1">
+        <div class="slideshow">
+            <div class="card active">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="../images/img1.png">
+                        <h3>EXERCISES 1</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                            <a href="https://web3-7scg.onrender.com/Web1/emailList"><button class="bn632-hover bn26">Read More</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a href="https://web3-7scg.onrender.com/Web1/emailList">Read More</a>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="../images/img2.png">
+                        <h3>EXERCISES 2</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <a href="https://web3-7scg.onrender.com/Web1/emailList"><button class="bn632-hover bn26">Read More</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="../images/pexels-photo-2023384.webp">
-                    <h3>EXERCISES 2</h3>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="../images/img3.png">
+                        <h3>EXERCISES 3</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <a href="https://web3-7scg.onrender.com/Web1/emailList"><button class="bn632-hover bn26">Read More</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a href="#">Read More</a>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="../images/img4.jpeg">
+                        <h3>EXERCISES 4</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <a href="https://web3-7scg.onrender.com/Web1/emailList"><button class="bn632-hover bn26">Read More</button></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="../images/pexels-photo-2607544.jpeg">
-                    <h3>EXERCISES 3</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        
+    </div>
+    <div class="navigation">
+        <button class="bn3637 bn38" onclick="showCard(1)">1</button>
+        <button class="bn3637 bn38" onclick="showCard(2)">2</button>
+        <button class="bn3637 bn38" onclick="showCard(3)">3</button>
+        <button class="bn3637 bn38" onclick="showCard(4)">4</button>
     </div>
     <footer class="container">
         <span class="blur"></span>
         <span class="blur"></span>
         <div class="column">
             <div class="logo">
-                <img src="../images/header1.png">
+                <img src="../images/footer.png">
             </div>
             <div class="socials">
                 <a href="https://www.youtube.com/channel/UCr4wm3H3_b77-mlPRSNzCYA"><i class="ri-youtube-line"></i></a>
@@ -139,15 +120,15 @@
         </div>
         <div class="column">
             <h4>Learn</h4>
-            <a href="https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_K%E1%BB%B9_thu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh">School</a>
-            <a href="#">Deliverer</a>
-            <a href="https://en.wikipedia.org/wiki/Web_development">Subject</a>
+            <a class="bn31" href="https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_K%E1%BB%B9_thu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh"><span class="bn31span">School</span></a>
+            <a class="bn31" href="#"><span class="bn31span">Delivery</span></a>
+            <a class="bn31" href="https://en.wikipedia.org/wiki/Web_development"><span class="bn31span">Subject</span></a>
         </div>
         <div class="column">
             <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
-            <a href="#">Sponsors</a>
+            <a class="bn31" href="#"><span class="bn31span">Blog</span></a>
+            <!-- <a class="bn31" href="#"><span class="bn31span">Blog</span></a>
+            <a class="bn31" href="#"><span class="bn31span">Blog</span></a> -->
         </div>
     </footer>
 
