@@ -11,7 +11,41 @@ function scrollToElement(elementSelector, instance = 0) {
 const link1 = document.getElementById("link1");
 
 const link2 = document.getElementById("link2");
+// Lắng nghe sự kiện khi nhấp vào các liên kết
+var links = document.querySelectorAll(".bn31");
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function(event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
 
+        var link = this.getAttribute("href"); // Lấy đường dẫn từ thuộc tính href của liên kết
+
+        // Kiểm tra nếu đường dẫn là "#" hoặc trống
+        if (link === "#" || link.trim() === "") {
+            // Thêm hành động tương ứng khi nhấp vào liên kết "Delivery"
+            console.log("Action for Delivery link");
+        } else {
+            // Tạo một trang mới với đường dẫn đã lấy được
+            window.open(link, "_blank");
+        }
+    });
+}
+var links = document.querySelectorAll(".socials");
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function(event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+
+        var link = this.getAttribute("href"); // Lấy đường dẫn từ thuộc tính href của liên kết
+
+        // Kiểm tra nếu đường dẫn là "#" hoặc trống
+        if (link === "#" || link.trim() === "") {
+            // Thêm hành động tương ứng khi nhấp vào liên kết "Delivery"
+            console.log("Action for Delivery link");
+        } else {
+            // Tạo một trang mới với đường dẫn đã lấy được
+            window.open(link, "_blank");
+        }
+    });
+}
 link1.addEventListener("click", () => {
   scrollToElement(".header");
 });
